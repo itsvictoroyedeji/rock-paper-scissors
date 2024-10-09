@@ -1,19 +1,24 @@
 console.log("Hey hey hey");
 
 function getComputerChoice() {
-  // choose a random number and assign it to “random number” variable 
+  // generate a random number, round it down to an integer, and assign it to “randomNumber” variable 
+  let randomNumber = Math.floor(Math.random() * 10) + 1;
 
   // condition: if random number <= 3
-
+  if (randomNumber <= 3) {
   // return “rock”
-
+    return "rock";
   // else if random number <=6
-
+  } else if (randomNumber <= 6) {
   // return “paper”
-
+    return "paper";
   // else return “scissors”
-
+  } else {
+    return "scissors";
+  }
 }
+
+console.log(getComputerChoice());
 
 function getHumanChoice() {
   // get user input that asks “type paper, rock, or scissors” and save to variable “choice”
@@ -54,11 +59,11 @@ function playRound(humanChoice, computerChoice) {
   // else: console log: "It's a tie";
 }
 
-let humanSelection = getHumanChoice();
-let computerSelection = getComputerChoice();
+// let humanSelection = getHumanChoice();
+//let computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection)
+// playRound(humanSelection, computerSelection)
 
-function playGame() {
+// function playGame() {
   
-}
+// }
