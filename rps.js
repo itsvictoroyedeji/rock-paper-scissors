@@ -24,9 +24,13 @@ function getComputerChoice() {
 function getHumanChoice() {
   // get user input that asks “type paper, rock, or scissors” and save to variable “choice”
   let choice = prompt("Type rock, paper, or scissors", '');
-  
-  // make all characters lowercase (to be case-insensitive)
-  choice = choice.toLowerCase();
+
+  // condition: if choice is null, end function. else: make all characters lowercase (to be case-insensitive)
+  if (choice == null) { 
+    return; 
+  } else { 
+    choice = choice.toLowerCase(); 
+  }
 
   // switch statement: if choice does not equal “paper, rock, or scissors”
     switch(choice) {
