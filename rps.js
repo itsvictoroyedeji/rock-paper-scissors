@@ -18,18 +18,23 @@ function getComputerChoice() {
   }
 }
 
-console.log(getComputerChoice());
-
 function getHumanChoice() {
   // get user input that asks “type paper, rock, or scissors” and save to variable “choice”
-
-  // condition: if choice does does not equal “paper, rock, or scissors”
-
-  // rerun the function again
-
-  // else return choice 
-
+  let choice = prompt("paper, rock, or scissors", '');
+  // switch statement: if choice does not equal “paper, rock, or scissors”
+    switch(choice) {
+      case "paper":
+      case "rock":
+      case "scissors":
+        return choice;
+        break;
+      default:
+        // alert them to type one of the choices
+        alert("type one of the three choices")
+    }
 } 
+
+console.log(getHumanChoice());
 
 //create variable humanScore and assign value 0
 
