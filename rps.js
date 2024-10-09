@@ -3,8 +3,10 @@ console.log("Welcome to the game!");
 function getComputerChoice() {
   // generate a random number, round it down to an integer, and assign it to “randomNumber” variable 
   let randomNumber = Math.floor(Math.random() * 10) + 1;
-  // //console.log("Random num: " + randomNumber);
-  
+
+  //Display randomNumber (for debugging purposes)
+  //console.log("Random num: " + randomNumber);
+
   // condition: if random number <= 3
   if (randomNumber <= 3) {
   // return “rock”
@@ -21,8 +23,10 @@ function getComputerChoice() {
 
 function getHumanChoice() {
   // get user input that asks “type paper, rock, or scissors” and save to variable “choice”
-  let choice = '';
-  choice = prompt("paper, rock, or scissors", '');
+  let choice = prompt("Type rock, paper, or scissors", '');
+  
+  // make all characters lowercase (to be case-insensitive)
+  choice = choice.toLowerCase();
 
   // switch statement: if choice does not equal “paper, rock, or scissors”
     switch(choice) {
@@ -36,7 +40,6 @@ function getHumanChoice() {
       default:
         // alert them to type one of the choices
         alert("type one of the three choices");
-        
     }
 } 
 
@@ -57,8 +60,6 @@ console.log("Computer score: " + computerSelection);
 playRound(humanSelection, computerSelection)
 
 function playRound(humanChoice, computerChoice) {
-  //make humanChoice case-insensitive
-
   // condition: if humanChoice equals rock and computerChoice equals paper
   if ((humanChoice === "rock") && (computerChoice === "paper")) {
     // console log: "You lose! Paper beats Rock."
@@ -108,7 +109,6 @@ function playRound(humanChoice, computerChoice) {
 
 console.log("Human score: " + humanScore);
 console.log("Computer score: " + computerScore);
-
 
 // function playGame() {
   
