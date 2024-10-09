@@ -21,13 +21,17 @@ function getComputerChoice() {
   }
 }
 
+// initialize global "choice" variable
+let choice;
+
 function getHumanChoice() {
   // get user input that asks “type paper, rock, or scissors” and save to variable “choice”
-  let choice = prompt("Type rock, paper, or scissors", '');
+  choice = prompt("Type rock, paper, or scissors", '');
 
-  // condition: if choice is null, end function. else: make all characters lowercase (to be case-insensitive)
+  // condition: if choice is null, end function.
   if (choice == null) { 
     return; 
+    // else: make all characters lowercase (to be case-insensitive)
   } else { 
     choice = choice.toLowerCase(); 
   }
@@ -44,7 +48,10 @@ function getHumanChoice() {
       default:
         // alert them to type one of the choices
         alert("type one of the three choices");
+        getHumanChoice();
     }
+    // returns no matter what (to prevent "undefined" when calling recursive function again)
+    return choice;
 } 
 
 //create variable humanScore and assign value 0
