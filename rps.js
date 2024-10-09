@@ -60,8 +60,12 @@ console.log("Computer score: " + computerSelection);
 playRound(humanSelection, computerSelection)
 
 function playRound(humanChoice, computerChoice) {
-  // condition: if humanChoice equals rock and computerChoice equals paper
-  if ((humanChoice === "rock") && (computerChoice === "paper")) {
+  // condition: if humanChoice equals undefined
+  if (humanChoice == undefined) {
+    // console.log: "Game didn't play. Try again"
+    console.log("Game didn't play. Try again");
+  // else if: if humanChoice equals rock and computerChoice equals paper
+  } else if ((humanChoice === "rock") && (computerChoice === "paper")) {
     // console log: "You lose! Paper beats Rock."
     console.log("You lose! Paper beats Rock");
     // increment computerScore variable by one
