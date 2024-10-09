@@ -34,11 +34,11 @@ function getHumanChoice() {
     }
 } 
 
-console.log(getHumanChoice());
-
 //create variable humanScore and assign value 0
+let humanScore = 0;
 
 //create variable computerScore and assign value 0
+let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
   //make humanChoice case-insensitive
