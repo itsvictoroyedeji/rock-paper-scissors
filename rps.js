@@ -42,12 +42,9 @@ function getHumanChoice() {
       case "rock":
       case "scissors":
         return choice;
-        break;
-      case null: // user selects "Cancel", meaning no input
-        break;
       default:
         // alert them to type one of the choices
-        alert("type one of the three choices");
+        alert("Type one of the three choices");
         getHumanChoice();
     }
     // returns no matter what (to prevent "undefined" when calling recursive function again)
