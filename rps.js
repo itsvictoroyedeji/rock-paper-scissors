@@ -127,6 +127,8 @@ function playGame() {
     // Call getComputerChoice function and assign to computerSelection
     computerSelection = getComputerChoice();
 
+    // Enter round number here
+    console.log("Round " + (i + 1) + ":");
     // Display both human and computer selections
     console.log("Human Selection: " + humanSelection);
     console.log("Computer score: " + computerSelection);
