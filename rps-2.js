@@ -1,4 +1,4 @@
-console.log("Welcome to the game!");
+console.log("Welcome to the game! This is more user-friendly");
 
 function getComputerChoice() {
   // generate a random number, round it down to an integer, and assign it to “randomNumber” variable 
@@ -42,7 +42,13 @@ function getHumanChoice() {
       case "rock":
       case "scissors":
         return choice;
+      default:
+        // alert them to type one of the choices
+        alert("Type one of the three choices");
+        getHumanChoice();
     }
+    // returns no matter what (to prevent "undefined" when calling recursive function again)
+    return choice;
 } 
 
 //create variable humanScore and assign value 0
