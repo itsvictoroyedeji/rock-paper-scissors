@@ -116,6 +116,18 @@ function playRound(humanChoice, computerChoice) {
 console.log("Human score: " + humanScore);
 console.log("Computer score: " + computerScore);
 
-// function playGame() {
-  
-// }
+function playGame() {
+  // create variable humanScore and assign value 0
+
+  // create variable computerScore and assign value 0
+
+  // Add a loop where playRound function is called 5 times
+  // Show the scores after each round (via console.log)
+
+  // condition: if humanScore > computerScore, console.log: "You won!"
+
+    // else if: computerScore > humanScore, console.log: "The computer won."
+
+    // else: console.log: "It's a tie."
+
+}
