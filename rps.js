@@ -37,12 +37,18 @@ function getHumanChoice() {
   }
 
   // switch statement: if choice does not equal “paper, rock, or scissors”
-    switch(choice) {
-      case "paper":
-      case "rock":
-      case "scissors":
-        return choice;
-    }
+  switch(choice) {
+    case "paper":
+    case "rock":
+    case "scissors":
+      return choice;
+    default:
+      // alert them to type one of the choices
+      alert("Type one of the three choices");
+      getHumanChoice();
+  }
+  // returns no matter what (to prevent "undefined" when calling recursive function again)
+  return choice;
 } 
 
 // Declare global variables humanSelection and computerSelection to use in playGame() function
