@@ -136,14 +136,14 @@ function playGame() {
     // Enter round number here
     console.log("Round " + (i + 1) + ":");
     // Display both human and computer selections
-    console.log("Human Selection: " + humanSelection);
-    console.log("Computer score: " + computerSelection);
+    console.log("Your Selection: " + humanSelection);
+    console.log("Computer Selection: " + computerSelection);
     
     // Call playRound function here!
     playRound(humanSelection, computerSelection);
 
     // Show the scores after each round (via console.log)
-    console.log("Human score: " + humanScore);
+    console.log("Your score: " + humanScore);
     console.log("Computer score: " + computerScore);
   }
 
