@@ -98,8 +98,7 @@ function playRound(e) {
 
   // Helper Function to display total match wins after the first match
   function displayMatchWins() {
-    matchWins.textContent = `Overall game score:
-    You: ${overallPlayerWins} | Computer: ${overallComputerWins}`;
+    matchWins.innerText = "Overall game score:\n " + "You: " + overallPlayerWins + " | Computer: " + overallComputerWins;
   }
 
   // Function to reset score after 5 wins
