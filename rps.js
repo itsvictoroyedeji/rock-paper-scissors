@@ -61,10 +61,10 @@ function clickCounter() {
   clicks += 1;
   count.textContent = `Clicks: ${clicks}`;
   if (clicks == 150) {
-    alert("That's a lot of clicks! Share the word 😀");
+    alert("That's a lot of clicks! Spread the word about this game 😀");
   }
   if (clicks == 250) {
-    alert("I learned how to code this from following TheOdinProject.com");
+    alert("I learned how to code this from following TheOdinProject.com. It's free to join!");
   }
   if (clicks == 500) {
     alert("Okay, it might be time to go back to work!")
