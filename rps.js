@@ -77,15 +77,15 @@ function playRound(e) {
 
   // Logic to get computer choice
   function getComputerChoice() {
-    // generate a random number between 1-10, round it down to an integer, and assign it to “randomNumber” variable 
-    let randomNumber = Math.floor(Math.random() * 10) + 1;
+    // generate a random number between 1-3, round it down to an integer, and assign it to “randomNumber” variable 
+    let randomNumber = Math.floor(Math.random() * 3) + 1
   
     //Display randomNumber (for debugging purposes)
-    //console.log("Random num: " + randomNumber);
+    // console.log("Random num: " + randomNumber);
   
-    if (randomNumber <= 3) {
+    if (randomNumber == 1) {
       return "rock";
-    } else if (randomNumber <= 6) {
+    } else if (randomNumber == 2) {
       return "paper";
     } else {
       return "scissors";
