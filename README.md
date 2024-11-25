@@ -1,10 +1,10 @@
 # A Simple Game of Rock, Paper, Scissors
 
-I randomly made this as part of [The Odin Project][1]. I enhanced the game a bit to include the "overall" match store, and an click counter at the bottom -- just to track how click clicks you have!
+I randomly made this as part of [The Odin Project][1], a free coding curriculum that actually taught me how to code. I enhanced the game a bit to include the "overall" game score with a click counter at the bottom -- just to track how many clicks you made!
 
-Enjoy it at your free time.
+Enjoy it during your free time.
 
-I'm also on [TikTok][2] | [Youtube][3] | and [IG][4], where you find different content for the different platforms.
+I'm also on [TikTok][2] | [Youtube][3] | and [IG][4], where you'll find different content for the different platforms.
 
 [1]: https://www.theodinproject.com
 [2]: https://www.tiktok.com/@victoroyedeji

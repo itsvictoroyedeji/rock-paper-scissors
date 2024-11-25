@@ -1,0 +1,77 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 78vh;
+  font-family:Arial, Helvetica, sans-serif;
+  /* border: 1px solid rgb(212, 212, 212); */
+}
+
+#container {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer {
+  height: 80px;
+  text-align:center;
+}
+
+#footer p {
+  margin: 0;
+}
+
+#footer .counter {
+  margin-bottom: 8px;
+}
+
+#footer p:last-child {
+  font-size: 75%;
+  margin-top: 10px;
+}
+
+.title, 
+.intro {
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  #container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .title,
+  .intro {
+    text-align: left;
+  }
+}
+
+#buttons {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: space-around
+}
+
+.button {
+  font-size: 100%;
+}
+
+#result {
+  margin-top: 40px;
+}
+
+.game-result {
+  font-weight: bold;
+}
+
+.match-wins {
+  font-size: 110%;
+  font-weight: bold;
+  text-align: center;
+}
