@@ -28,9 +28,10 @@ const gameResult = document.createElement("p");
 gameResult.className = "game-result"; 
 
 const lineSpace = document.createElement("br");
+const lineSpace2 = document.createElement("br");
 
 const score = document.createElement("p");
-computerResult.className = "score"; 
+score.className = "score"; 
 
 const matchWins = document.createElement("p");
 matchWins.className = "match-wins";
@@ -40,7 +41,7 @@ result.appendChild(computerResult);
 result.appendChild(gameResult);
 result.appendChild(lineSpace);
 result.appendChild(score);
-result.appendChild(lineSpace);
+result.appendChild(lineSpace2);
 result.appendChild(matchWins);
 
 
@@ -161,7 +162,7 @@ function playRound(e) {
   }
 
   // Display score:
-  score.textContent = `Score - You: ${playerScore} | Computer: ${computerScore}`;
+  score.textContent = `Score: You: ${playerScore} | Computer: ${computerScore}`;
   
   // First score to 5 wins logic
   if (playerScore === 5) {
