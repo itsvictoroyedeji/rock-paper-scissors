@@ -4,9 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 98vh;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      border: 1px solid rgb(212, 212, 212);
+    }
+
+    #container {
+      height: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    #footer {
+      height: 80px;
+      text-align:center;
+    }
+
+    #footer p {
+      margin: 0;
+    }
+
+    #footer .counter {
+      margin-bottom: 8px;
+    }
+
+    .title, 
+    .intro {
+      text-align: center;
+    }
+
+    @media (min-width: 769px) {
+      #container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .title,
+      .intro {
+        text-align: left;
+      }
+    }
+  
+    #buttons {
+       margin-top: 20px;
+       margin-bottom: 20px;
+       display: flex;
+       justify-content: space-around
+    }
+
+    .button {
+      font-size: 100%;
+    }
+
+    #result {
+      margin-top: 40px;
+    }
+
+    .game-result {
+      font-weight: bold;
+    }
+
+    .match-wins {
+      font-size: 110%;
+      font-weight: bold;
+    }
+
+  </style>
 </head>
 <body>
-  
+  <div id="container">
+    <div id="main">
+      <h2 class="title">The Rock, Paper, or Scissors Game</h2>
+      <p class="intro">Select rock, paper, or scissors. You're going against the computer. First score to 5 wins the match.</p>
+      <div id="buttons">
+        <button id="rock" class="button">Rock</button>
+        <button id="paper" class="button">Paper</button>
+        <button id="scissors" class="button">Scissors</button>
+      </div>
+      
+      <div id="result"></div>
+    </div>
+    <div id="footer">
+      <div class="footer">
+        <p class="counter">Clicks: 0</p>
+        <p><a href="#" target="_blank">Victor's Github</a></p>
+      </div>
+    </div>
+  </div> 
+
   <script src="./rps.js"></script>
 </body>
 </html>
