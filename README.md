@@ -4,7 +4,7 @@ I randomly made this as part of [The Odin Project][1]. I enhanced the game a bit
 
 Enjoy it at your free time.
 
-I'm also on TikTok[2] | Youtube[3] | and IG[4], where you find different content for the different platforms.
+I'm also on [TikTok][2] | [Youtube][3] | and [IG][4], where you find different content for the different platforms.
 
 [1]: https://www.theodinproject.com
 [2]: https://www.tiktok.com/@victoroyedeji
