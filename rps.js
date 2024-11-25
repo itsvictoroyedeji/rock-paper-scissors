@@ -54,6 +54,7 @@ rock.addEventListener('click', clickCounter);
 paper.addEventListener('click', clickCounter);
 scissors.addEventListener('click', clickCounter);
 
+// Initialize click counter
 let clicks = 0;
 
 function clickCounter() {
@@ -71,7 +72,7 @@ function clickCounter() {
   }
 }
 
-// function logic to play a single round
+// Function logic to play a single round
 function playRound(e) {
 
   // Logic to get computer choice
@@ -121,29 +122,29 @@ function playRound(e) {
 
   // Game logic
   if ((playerChoice === "rock") && (computerChoice === "paper")) {
-    gameResult.textContent = "You lose! Paper beats Rock";
+    gameResult.textContent = "You lose. Paper beats Rock.";
     // increment computerScore variable by one
     computerScore++;
 
   } else if ((playerChoice === "rock") && (computerChoice === "scissors")) {
-    gameResult.textContent = " Rock beats Scissors.";
+    gameResult.textContent = "You win. Rock beats Scissors.";
     // increment playerScore variable by one
     playerScore++;
 
   } else if ((playerChoice === "paper") && (computerChoice === "scissors")) {
-    gameResult.textContent = "You lose! Scissors beats Paper.";
+    gameResult.textContent = "You lose. Scissors beats Paper.";
     computerScore++;
 
   } else if ((playerChoice === "paper") && (computerChoice === "rock")) {
-    gameResult.textContent = " Paper beats Rock.";
+    gameResult.textContent = "You win. Paper beats Rock.";
     playerScore++;
 
   } else if ((playerChoice === "scissors") && (computerChoice === "rock")) {
-    gameResult.textContent = " You lose! Rock beats Scissors.";
+    gameResult.textContent = "You lose. Rock beats Scissors.";
     computerScore++;
 
   } else if ((playerChoice === "scissors") && (computerChoice === "paper")) {
-    gameResult.textContent = "  Scissors beats Paper.";
+    gameResult.textContent = "You win. Scissors beats Paper.";
     playerScore++;
 
   } else {
