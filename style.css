@@ -4,13 +4,12 @@ html {
   box-sizing: border-box;
 }
 body {
-  height: 78vh;
   font-family:Arial, Helvetica, sans-serif;
   /* border: 1px solid rgb(212, 212, 212); */
 }
 
 #container {
-  height: 100%;
+  min-height: 97vh;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -68,6 +67,10 @@ body {
 
 .game-result {
   font-weight: bold;
+}
+
+.score {
+  text-align: center;
 }
 
 .match-wins {
